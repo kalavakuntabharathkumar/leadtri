@@ -14,3 +14,5 @@ def redis_client():
 
 def cache_key(content_id: str) -> str:
     return f"content:v1:{content_id}"
+
+# Redis cache keys are versioned to allow safe cache changes.

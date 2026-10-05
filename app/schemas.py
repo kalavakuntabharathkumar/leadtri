@@ -18,3 +18,5 @@ class LeadOut(BaseModel):
     category: str
     confidence: float
     status: str
+
+# Pydantic schemas validate inbound CMS and lead payloads.
