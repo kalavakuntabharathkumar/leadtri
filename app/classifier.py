@@ -17,3 +17,5 @@ def classify_lead(message: str) -> tuple[str, float]:
         return "general", 0.45
     total = sum(scores.values())
     return ranked[0][0], round(ranked[0][1] / max(total, 1), 2)
+
+# Keep baseline triage deterministic and easy to audit.

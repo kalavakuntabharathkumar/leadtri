@@ -12,3 +12,5 @@ def process_lead(lead: dict) -> dict:
     lead["confidence"] = confidence
     lead["status"] = "triaged"
     return lead
+
+# Celery worker isolates lead triage from request latency.
