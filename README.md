@@ -31,3 +31,6 @@ pytest -q
 
 ## Notes
 The classifier is an explainable baseline, not a trained scikit-learn model. Replace it with a validated/persisted model pipeline and add dataset evaluation before claiming production accuracy. Storage-backed routes require MongoDB and Redis to be running.
+
+## API contract
+All `/api/*` routes require `X-API-Key`; use the configured development key only locally.
